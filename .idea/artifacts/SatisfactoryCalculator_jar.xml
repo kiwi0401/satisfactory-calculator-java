@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SatisfactoryCalculator:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/SatisfactoryCalculator_jar</output-path>
+    <root id="archive" name="SatisfactoryCalculator.jar">
+      <element id="module-output" name="SatisfactoryCalculator" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/netbeans/external/AbsoluteLayout/RELEASE120/AbsoluteLayout-RELEASE120.jar" path-in-jar="/" />
+      <element id="library" level="project" name="Maven: org.netbeans.external:AbsoluteLayout:RELEASE120" />
+    </root>
+  </artifact>
+</component>
