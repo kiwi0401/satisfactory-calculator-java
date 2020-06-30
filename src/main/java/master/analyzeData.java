@@ -2,6 +2,7 @@ package master;
 
 import javax.swing.*;
 import java.awt.*;
+import java.text.DecimalFormat;
 import java.util.*;
 
 public class analyzeData {
@@ -15,9 +16,9 @@ public class analyzeData {
 
     public void jtextareaTest(){
 
-        String s[] = outputArea.getText().split("\\r?\\n");
-        ArrayList<String> evaluatableText = new ArrayList<String>(Arrays.asList(s));
-        ArrayList<String> totals = new ArrayList<String>();
+        String[] s = outputArea.getText().split("\\r?\\n");
+        ArrayList<String> evaluatableText = new ArrayList<>(Arrays.asList(s));
+        ArrayList<String> totals = new ArrayList<>();
 
         for (String extract : evaluatableText) {
             if (extract.contains(">")) {
@@ -159,7 +160,7 @@ public class analyzeData {
                 }
             }
         }
-        ArrayList<String> finalValues = new ArrayList<String>();
+        ArrayList<String> finalValues = new ArrayList<>();
 
         for(int i = 0; i < totals.size(); i++) {
 
@@ -186,15 +187,12 @@ public class analyzeData {
                 }
             }
 
-            String toAdd = Double.toString(fullCost).concat(initial);
+            DecimalFormat ds = new DecimalFormat("#.##");
+            String toAdd = ds.format(fullCost).concat(initial);
             finalValues.add(toAdd);
         }
         outputArea.append("\n\n\n---------------\n TOTALS \n---------------\n\n");
-        Collections.sort(finalValues, new Comparator<String>(){
-            public int compare(String a, String b) {
-                return (int)((new Scanner(b).nextDouble()) - (new Scanner(a).nextDouble()));
-            }
-        });
+        finalValues.sort((a, b) -> (int) ((new Scanner(b).nextDouble()) - (new Scanner(a).nextDouble())));
         new textHighlighter("TOTALS", Color.GREEN,outputArea);
         for(int i = 0; i < totals.size(); i++) {
             outputArea.append(finalValues.get(i) + "\n");
