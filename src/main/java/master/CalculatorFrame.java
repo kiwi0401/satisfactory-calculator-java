@@ -133,6 +133,13 @@ public final class CalculatorFrame extends JFrame {
         outputTextArea = new JTextArea();
         CalculateButton = new JButton();
 
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("SatisfactoryCalculator");
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        setMaximumSize(new java.awt.Dimension(1024, 712));
+        setMinimumSize(new java.awt.Dimension(1024, 712));
+        setResizable(false);
+
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
         jScrollPane2.setViewportView(jTextArea1);
