@@ -35,7 +35,7 @@ public class CopperSheet {
         double CopperIngots = num;
         double water = num;
         output.append(ds.format(num) + " Steamed Copper Sheets / Minute:  " + ds.format(CopperIngots) + " Copper Ingots / minute |  " +
-                ds.format(water) +" water(m3) / minute. Requires  " + ds.format(num/22.5) + " Refineries\n\n");
+                ds.format(water) +" Water(m3) / minute. Requires  " + ds.format(num/22.5) + " Refineries\n\n");
         new CopperIngot(CopperIngots,alternateRecipes,output);
     }
 
