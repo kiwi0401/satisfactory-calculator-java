@@ -30,7 +30,7 @@ public class Rotor {
             defaultRotor();
         } else if(alternateRecipes.get(20).getSelectedItem().toString() == "Copper") {
             copperRotor();
-        } else if(alternateRecipes.get(3).getSelectedItem().toString() == "Steel") {
+        } else if(alternateRecipes.get(20).getSelectedItem().toString() == "Steel") {
             steelRotor();
         }
     }
