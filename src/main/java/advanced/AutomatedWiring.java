@@ -24,9 +24,9 @@ public class AutomatedWiring {
         this.alternateRecipes = alternateRecipes;
 
 
-        if (alternateRecipes.get(15).getSelectedItem().toString() == "Default") {
+        if (alternateRecipes.get(25).getSelectedItem().toString() == "Default") {
             defaultWiring();
-        } else if (alternateRecipes.get(15).getSelectedItem().toString() == "High-Speed") {
+        } else if (alternateRecipes.get(25).getSelectedItem().toString() == "High-Speed") {
             highspeedWiring();
         }
     }

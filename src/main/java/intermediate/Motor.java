@@ -30,9 +30,9 @@ public class Motor {
         this.output = output;
         this.alternateRecipes = alternateRecipes;
 
-        if(alternateRecipes.get(11).getSelectedItem().toString() == "Default") {
+        if(alternateRecipes.get(24).getSelectedItem().toString() == "Default") {
             defaultMotor();
-        } else if(alternateRecipes.get(11).getSelectedItem().toString() == "Rigour") {
+        } else if(alternateRecipes.get(24).getSelectedItem().toString() == "Rigour") {
             rigourMotor();
         }
     }
@@ -59,7 +59,7 @@ public class Motor {
         double crystalOscillator = num / 6;
         output.append(ds.format(num) + " Rigour Motors / Minute:  " + ds.format(rotor) + " Rotors / minute |  " +
                 ds.format(stator) +" Stators / minute |  " + ds.format(crystalOscillator) + " Crystal Oscillators / Minute" +
-                ". Requires  " + ds.format(num/5) + " Assemblers\n\n");
+                ". Requires  " + ds.format(num/7.5) + " Manufacturers\n\n");
 
         output.append("v-Rigour Motor Start-v\n\n");
         new textHighlighter("v-Rigour Motor Start-v", new Color(255,108,0),output);

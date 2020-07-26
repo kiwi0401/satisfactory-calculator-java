@@ -65,7 +65,7 @@ public class NuclearFuelRod {
 
         output.append("v-Nuclear Fuel Rod Start-v\n\n");
         new textHighlighter("v-Nuclear Fuel Rod Start-v", Color.ORANGE,output);
-        new EncasedUraniumCell(encasedBeam,alternateRecipes,output);
+        new EncasedUraniumCell(encasedUranium,alternateRecipes,output);
         output.append("-----\n\n");
         new ElectromagneticControlRod(electromagneticControlRod,alternateRecipes,output);
         output.append("-----\n\n");
