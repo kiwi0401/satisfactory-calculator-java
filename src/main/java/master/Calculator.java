@@ -2,6 +2,7 @@ package master;
 
 import javax.swing.*;
 import java.lang.reflect.Constructor;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Calculator{
@@ -13,7 +14,7 @@ public class Calculator{
     private boolean advancedOil = false;
     Class<?> p;
 
-    public Calculator(String product, double amount, List<JComboBox<String>> alternateRecipes, JTextArea outputTextArea){
+    public Calculator(String product, double amount, List<JComboBox<String>> alternateRecipes, JTextArea outputTextArea, ArrayList<item> items){
         this.product = product;
         this.amount = Math.abs(amount);
         this.alternateRecipes = alternateRecipes;

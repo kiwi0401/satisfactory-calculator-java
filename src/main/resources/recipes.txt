@@ -1,0 +1,167 @@
+Packager~ {
+    Packaged Fuel, Output: {Packaged Fuel:40}, Ingredients: {Fuel:40}{Empty Canister:40}
+    Packaged Heavy Oil Residue, Output: {Packaged Heavy Oil Residue:30}, Ingredients: {Heavy Oil Residue:30}{Empty Canister:30}
+    Packaged Liquid Biofuel, Output: {Packaged Liquid Biofuel:40}, Ingredients: {Liquid Biofuel:40}{Empty Canister:40}
+    Packaged Oil, Output: {Packaged Oil:30}, Ingredients: {Crude Oil:30}{Empty Canister:30}
+    Packaged Turbofuel, Output: {Packaged Turbo Fuel:20}, Ingredients: {Turbofuel:20}{Empty Canister:30}
+    Packaged Water, Output: {Packaged Water:60}, Ingredients: {Water:60}{Empty Canister:60}
+    Unpackaged Fuel, Output: {Fuel:60}{Empty Canister:60}, Ingredients: {Packaged Fuel:60}
+    Unpackaged Heavy Oil Residue, Output: {Heavy Oil Residue:20}{Empty Canister:20}, Ingredients: {Packaged Heavy Oil Residue:20}
+    Unpackaged Liquid Biofuel, Output: {Liquid Biofuel:60}{Empty Canister:60}, Ingredients: {Packaged Liquid Biofuel:60}
+    Unpackaged Oil, Output: {Crude Oil:60}{Empty Canister:60}, Ingredients: {Packaged Oil:60}
+    Unpackaged Turbofuel, Output: {Turbofuel:20}{Empty Canister:20}, Ingredients: {Packaged Turbofuel:20}
+    Unpackaged Water, Output: {Water:120}{Empty Canister:120}, Ingredients: {Packaged Water:120}
+}~
+
+Constructor~ {
+    Biomass, Output: {Biomass:300}, Ingredients: {Wood:60}, Alternate: Wood
+    Biomass, Output: {Biomass:60}, Ingredients: {Leaves:120}, Alternate: Leaves
+    Cable, Output: {Cable:30}, Ingredients: {Wire:60}
+    Screw, Output: {Screw:50}, Ingredients: {Iron:12.5}, Alternate: Casted
+    Wire, Output: {Wire:120}, Ingredients: {Caterium:15}, Alternate: Caterium
+    Color Cartridge, Output: {Color Cartridge:75}, Ingredients: {Flower Petals:37.5}
+    Concrete, Output: {Concrete:15}, Ingredients: {Limestone:45}
+    Copper Sheet, Output: {Copper Sheet:10}, Ingredients: {Copper Ingot:20}
+    Empty Canister,	Output: {Empty Canister:60}, Ingredients: {Plastic:30}
+    Iron Plate, Output: {Iron Plate:20}, Ingredients: {Iron Ingot:30}
+    Iron Rod, Output:{Iron Rod:15}, Ingredients: {Iron Ingot:15}
+    Wire, Output: {Wire:22.5}, Ingredients: {Iron Ingot:12.5}, Alternate: Iron
+    Quartz Crystal, Output: {Quartz Crystal:22.5}, Ingredients:{Raw Quartz:37.5}
+    Quickwire, Output: {Quickwire:60}, Ingredients: {Caterium Ingot:12.0}
+    Screw, Output: {Screw:40}, Ingredients: {Iron Rod:10}
+    Silica, Output: {Silica:37.5}, Ingredients: {Raw Quartz:22.5}
+    Steel Beam, Output: {Steel Beam:15}, Ingredients: {Steel Ingot:60}
+    Empty Canister, Output: {Empty Canister:40}, Ingredients: {Steel Ingot:60}, Alternate: Steel
+    Steel Pipe, Output: {Steel Pipe:20}, Ingredients: {Steel Ingot:30}
+    Iron Rod, Output: {Iron Rod:48}, Ingredients: {Steel Ingot:12}, Alternate: Steel
+    Screw, Output: {Screw:260}, Ingredients: {Steel Beam:5}, Alternate: Steel
+    Wire, Output: {Wire:30}, Ingredients: {Copper Ingot:15}
+}~
+
+Smelter~ {
+    Caterium Ingot, Output: {Caterium Ingot:15}, Ingredients: {Caterium Ore:45}
+    Copper Ingot, Output: {Copper Ingot:30}, Ingredients: {Copper Ore:30}
+    Iron Ingot, Output: {Iron Ingot:30}, Ingredients: {Iron Ore:30}
+    Aluminum Ingot, Output: {Aluminum Ingot:36}, Ingredients: {Aluminum Scrap:144}
+}~
+
+Foundry~ {
+    Aluminum Ingot, Output: {Aluminum Ingot:80}, Ingredients: {Aluminum Scrap:240}{Silica:140}
+    Steel Ingot, Output: {Steel Ingot:100}, Ingredients: {Iron Ore:75}{Petroleum Coke:75}, Alternate: Coke
+    Steel Ingot, Output: {Steel Ingot:37.5}, Ingredients: {Iron Ore:22.5}{Compacted Coal:11.25}, Alternate: Compacted
+    Copper Ingot, Output: {Copper Ingot:100}, Ingredients: {Iron Ore:25}{Copper Ore:50}, Alternate: Alloy
+    Iron Ingot, Output: {Iron Ingot:50}, Ingredients: {Iron Ore:20}{Copper Ore:20}, Alternate: Alloy
+    Steel Ingot, Output: {Steel Ingot:60}, Ingredients: {Iron Ingot:40}{Coal:40}, Alternate: Solid
+    Steel Ingot, Output: {Steel Ingot:45}, Ingredients: {Iron Ore:45}{Coal:45}
+}~
+
+Assembler~ {
+    A.I. Limiter, Output: {A.I. Limiter:5}, Ingredients: {Copper Sheet:25}{Quickwire:100}
+    Reinforced Iron Plate, Output: {Reinforced Iron Plate:3.8}, Ingredients: {Rubber:3.8}{Iron Plate:11.4}, Alternate: Adhered
+    Alclad Aluminum Sheet, Output: {Alclad Aluminum Sheet:30}, Ingredients: {Aluminum Ingot:60}{Copper Ingot:22.5}
+    Automated Wiring, Output: {Automated Wiring:2.5}, Ingredients: {Stator:2.5}{Cable:50}
+    Black Powder, Output: {Black Powder:7.5}, Ingredients: {Coal:7.5}{Sulfur:15}
+    Modular Frame, Output: {Modular Frame:5}, Ingredients: {Reinforced Iron Plate:7.5}{Screw:140}, Alternate: Bolted
+    Reinforced Iron Plate, Output: {Reinforced Iron Plate:15},Ingredients: {Iron Plate:90}{Screw:250}, Alternate: Bolted
+    Circuit Board, Output: {Circuit Board:8.8}, Ingredients: {Plastic:12.5}{Quickwire:37.5}, Alternate: Caterium
+    Silica, Output: {Silica:26.3}, Ingredients: {Raw Quartz:11.3}, Alternate: Cheap
+    Circuit Board, Output: {Circuit Board:7.5}, Ingredients: {Copper Sheet:15}{Plastic:30}
+    Empty Canister, Output: {Empty Canister:60}, Ingredients: {Copper Sheet:15}{Iron Plate:30}, Alternate: Coated
+    Iron Plate, Output: {Iron Plate:75}, Ingredients: {Iron Ingot:50}{Plastic:10}, Alternate: Coated
+    Compacted Coal, Output: {Compacted Coal:25}, Ingredients: {Coal:25}{Sulfur:25}
+    Rotor, Output: {Rotor:11.3}, Ingredients: {Screw:195}{Copper Sheet:22.5}, Alternate: Copper
+    Computer, Output: {Computer:2.8}, Ingredients: {Circuit Board:7.5}{Crystal Oscillator:2.8}, Alternate: Crystal
+    Circuit Board, Output: {Circuit Board:5}, Ingredients: {Rubber:30}{Petroleum Coke:45}, Alternate: Electrode
+    Electromagnetic Control Rod, Output: {Electromagnetic Control Rod:10}, Ingredients: {High-Speed Connector:5}{Stator:10}, Alternate: Connection
+    Electromagnetic Control Rod, Output: {Electromagnetic Control Rod:4}, Ingredients: {Stator:6}{A.I. Limiter:4}
+    Encased Industrial Beam, Output: {Encased Industrial Beam:6}, Ingredients: {Steel Beam:24}{Concrete:30}
+    Encased Industrial Beam, Output: {Encased Industrial Beam:4}, Ingredients: {Steel Pipe:28}{Concrete:20}, Alternate: Pipe
+    Encased Uranium Cell, Output: {Encased Uranium Cell:10}, Ingredients: {Uranium Pellet:40}{Concrete:9}
+    Black Powder, Output: {Black Powder:15}, Ingredients: {Sulfur:7.5}{Compacted Coal:3.75}, Alternate: Fine
+    Concrete, Output: {Concrete:25}, Ingredients: {Silica:7.5}{Limestone:30}, Alternate: Fine
+    Quickwire, Output: {Quickwire:90}, Ingredients: {Copper Ingot:37.5}{Caterium Ingot:7.5}, Alternate: Fused
+    Wire, Output: {Wire:90}, Ingredients: {Copper Ingot:12}{Caterium Ingot:3}, Alternate: Fused
+    Heat Sink, Output: {Heat Sink:13.1}, Ingredients: {Alclad Aluminum Sheet:37.5}{Copper Sheet:56.3}, Alternate: Heat Exchanger
+    Heat Sink, Output: {Heat Sink:10}, Ingredients: {Alclad Aluminum Sheet:40}{Rubber:70}
+    Modular Frame, Output: {Modular Frame:2}, Ingredients: {Reinforced Iron Plate:3}{Iron Rod:12}
+    Motor, Output: {Motor:5}, Ingredients: {Rotor:10}{Stator:10}
+    Nobelisk, Output: {Nobelisk:3}, Ingredients: {Black Powder:15}{Steel Pipe:30}
+    Cable, Output: {Cable:27.5}, Ingredients: {Quickwire:7.5}{Rubber:5}, Alternate: Quickwire
+    Stator, Output: {Stator:8}, Ingredients: {Steel Pipe:16}{Quickwire:60}, Alternate: Quickwire
+    Reinforced Iron Plate, Output: {Reinforced Iron Plate:5}, Ingredients: {Iron Plate:30}{Screw:60}
+    Rotor, Output: {Rotor:4}, Ingredients: {Iron Rod:20}{Screw:100}
+    Cable, Output: {Cable:100}, Ingredients: {Wire:45}{Rubber:30}, Alternate: Rubber
+    Concrete, Output: {Concrete:45}, Ingredients: {Rubber:10}{Limestone:50}, Alternate: Rubber
+    Circuit Board, Output: {Circuit Board:12.5}, Ingredients: {Silica:27.5}{Copper Sheet:27.5}, Alternate: Silicone
+    Smart Plating, Output: {Smart Plating:2}, Ingredients: {Reinforced Iron Plate:2}{Rotor:2}
+    Stator, Output: {Stator:5}, Ingredients: {Steel Pipe:15}{Wire:40}
+    Iron Plate, Output: {Iron Plate:45}, Ingredients: {Plastic:5}{Steel Ingot:7.5}, Alternate: Coated
+    Rotor, Output: {Rotor:5}, Ingredients: {Wire:30}{Steel Pipe:10}, Alternate: Steel
+    Modular Frame, Output: {Modular Frame:3}, Ingredients: {Reinforced Iron Plate:2}{Steel Pipe:10}, Alternate: Steeled
+    Reinforced Iron Plate, Output: {Reinforced Iron Plate:5.6}, Ingredients: {Iron Plate:18.8}{Wire:37.5}, Alternate: Stitched
+    Versatile Framework, Output: {Versatile Framework:5}, Ingredients: {Modular Frame:2.5}{Steel Beam:30}, Alternate: Versatile
+}~
+
+Refinery~ {
+    Alumina Solution, Output: {Alumina Solution:80}{Silica:20}, Ingredients: {Bauxite:70}{Water:100}
+    Aluminum Scrap, Output: {Aluminum Scrap:360}{Water:60}, Ingredients: {Alumina Solution:240}{Petroleum Coke:60}
+    Cable, Output: {Cable:67.5}, Ingredients: {Wire:37.5}{Heavy Oil Residue:15}, Alternate: Coated
+    Packaged Fuel, Output: {Packaged Fuel:60}, Ingredients: {Packaged Water:60}{Heavy Oil Residue:30}, Alternate: Diluted
+    Aluminum Scrap, Output: {Aluminum Scrap:150}{Water:30}, Ingredients: {Alumina Solution:90}{Coal:30}, Alternate: Electrode
+    Fuel, Output: {Fuel:40}, Ingredients: {Crude Oil:60}{Polymer Resin:30}
+    Heavy Oil Residue, Output: {Heavy Oil Residue:40}{Polymer Resin:20}, Ingredients: {Crude Oil:30}
+    Petroleum Coke, Output: {Petroleum Coke:120}, Ingredients: {Heavy Oil Residue:40}
+    Plastic, Output: {Plastic:20}{Heavy Oil Residue:10}, Ingredients:{Crude Oil:30}
+    Fabric, Ingredients: Output: {Fabric:5}, Ingredients: {Polymer Resin:80}{Water:50}
+    Polymer Resin, Output: {Polymer Resin:130}{Heavy Oil Residue:20}, Ingredients: {Crude Oil:60}
+    Caterium Ingot, Output: {Caterium Ingot:12}, Ingredients: {Water:24}{Caterium Ore:24}, Alternate: Pure
+    Copper Ingot, Output: {Copper Ingot:37.5}, Ingredients: {Copper Ore:15}{Water:10}, Alternate: Pure
+    Iron Ingot, Output: {Iron Ingot:65}, Ingredients: {Iron Ore:35}{Water:20}, Alternate: Pure
+    Quartz Crystal, Output: {Quartz Crystal:52.5}, Ingredients: {Raw Quartz:67.5}{Water:37.5}, Alternate: Pure
+    Plastic, Output: {Plastic:60}, Ingredients: {Rubber:30}{Fuel:30}, Alternate: Recycled
+    Rubber, Output: {Rubber:60}, Ingredients: {Plastic:30}{Fuel:30}, Alternate: Recycled
+    Fuel, Output: {Fuel:40}, Ingredients: {Heavy Oil Residue:60}, Alternate: Residual
+    Plastic, Output: {Plastic:20}, Ingredients: {Polymer Resin:60}{Water:20}, Alternate: Residual
+    Rubber, Output: {Rubber:20}, Ingredients: {Polymer Resin:40}{Water:40}, Alternate: Residual
+    Rubber, Output: {Rubber:20}{Heavy Oil Residue:20}, Ingredients: {Crude Oil:30}
+    Copper Sheet, Output: {Copper Sheet:22.5}, Ingredients: {Copper Ingot:22.5}{Water:22.5}, Alternate: Steamed
+    Sulfuric Acid, Output: {Sulfuric Acid:100}, Ingredients: {Sulfur:50}{Water:50}
+    Turbofuel, Output: {Turbofuel:30}, Ingredients: {Heavy Oil Residue:37.5}{Compacted Coal:30}, Alternate: Heavy Turbofuel
+    Turbofuel, Output: {Turbofuel:18.8}, Ingredients: {Compacted Coal:15}{Fuel:22.5}, Alternate: Turbofuel
+    Uranium Pellet, Output: {Uranium Pellet:50}{Sulfuric Acid:20}, Ingredients: {Uranium:50}{Sulfuric Acid:80}
+    Concrete, Output: {Concrete:80}, Ingredients: {Limestone:120}{Water:100}, Alternate: Wet
+}~
+
+Molecular Assembler~ {
+    Adaptive Control Unit, Output: {Adaptive Control Unit:1}, Ingredients: {Automated Wiring:7.5}{Circuit Board:5}{Heavy Modular Frame:1}{Computer:1}
+    Battery, Output: {Battery:5.6}, Ingredients: {Alclad Aluminum Sheet:15}{Wire:30}{Sulfur:37.5}{Plastic:15}
+    Beacon, Output: {Beacon:7.5}, Ingredients: {Iron Plate:22.5}{Iron Rod:7.5}{Wire:112.5}{Cable:15}
+    Computer, Output: {Computer:3.8}, Ingredients: {Circuit Board:26.3}{Quickwire:105}{Rubber:45}, Alternate: Caterium
+    Computer, Output: {Computer:2.5}, Ingredients: {Circuit Board:25}{Plastic:45}{Cable:22.5}{Screw:130}
+    Crystal Oscillator, Output: {Crystal Oscillator:1}, Ingredients: {Cable:14}{Quartz Crystal:18}{Reinforced Iron Plate:2.5}
+    Versatile Framework, Output: {Versatile Framework:7.5}, Ingredients: {Modular Frame:3.8}{Steel Beam:22.5}{Rubber:30}, Alternate: Flexible
+    Gas Filter, Output: {Gas Filter:7.5}, Ingredients: {Coal:37.5}{Rubber:15}{Fabric:15}
+    Heavy Modular Frame, Output: {Heavy Modular Frame:2.8}, Ingredients: {Encased Industrial Beam:9.4}{Modular Frame:7.5}{Steel Pipe:33.8}{Concrete:20.6}, Alternate: Encased
+    Heavy Modular Frame, Output: {Heavy Modular Frame:3.8}, Ingredients: {Modular Frame:18.8}{Encased Industrial Beam:11.3}{Rubber:75}{Screw:390}, Alternate: Flexible
+    Heavy Modular Frame, Output: {Heavy Modular Frame:2}, Ingredients: {Modular Frame:10}{Steel Pipe:30}{Encased Industrial Beam:10}{Screw:200}
+    High-Speed Connector, Output: {High-Speed Connector:3.8}, Ingredients: {Quickwire:210}{Cable:37.5}{Circuit Board:3.8}
+    Automated Wiring, Output: {Automated Wiring:7.5}, Ingredients: {Stator:3.8}{Wire:75}{High-Speed Connector:1.9}, Alternate: High-Speed
+    Encased Uranium Cell, Output: {Encased Uranium Cell:17.5}, Ingredients: {Sulfur:22.5}{Uranium Pellet:20}{Silica:22.5}{Quickwire:37.5}, Alternate: Infused
+    Crystal Oscillator, Output: {Crystal Oscillator:1.9}, Ingredients: {Quartz Crystal:18.8}{Rubber:13.1}{A.I. Limiter:1.9}, Alternate: Insulated
+    Iodine Infused Filter, Output: {Iodine Infused Filter:3.8}, Ingredients: {Gas Filter:3.8}{Quickwire:30}{Rubber:7.5}
+    Modular Engine, Output: {Modular Engine:1}, Ingredients: {Rubber:15}{Motor:2}{Smart Plating:2}
+    Nuclear Fuel Rod, Output: {Nuclear Fuel Rod:0.4}, Ingredients: {Encased Uranium Cell:10}{Encased Industrial Beam:1.2}{Electromagnetic Control Rod:2}
+    Nuclear Fuel Rod, Output: {Nuclear Fuel Rod:0.6}, Ingredients: {Encased Uranium Cell:10}{Electromagnetic Control Rod:2}{Crystal Oscillator:0.6}{Beacon:1.2}, Alternate: Unit
+    Smart Plating, Output: {Smart Plating:5}, Ingredients: {Reinforced Iron Plate:2.5}{Rotor:2.5}{Plastic:7.5}, Alternate: Plastic
+    Radio Control Unit, Output: {Radio Control Unit:3.8}, Ingredients: {Heat Sink:12.5}{Supercomputer:1.3}{Quartz Crystal:37.5}, Alternate: System
+    Radio Control Unit, Output: {Radio Control Unit:2.5}, Ingredients: {Heat Sink:10}{Rubber:40}{Crystal Oscillator:2.5}{Computer:2.5}
+    Rifle Cartridge, Output: {Rifle Cartridge:15}, Ingredients: {Beacon:3}{Steel Pipe:30}{Black Powder:30}{Rubber:30}
+    Motor, Output: {Motor:7.5}, Ingredients: {Rotor:3.8}{Stator:3.8}{Crystal Oscillator:1.3}, Alternate: Rigour
+    Beacon, Output: {Beacon:10}, Ingredients: {Steel Beam:2}{Steel Pipe:8}{Crystal Oscillator:0.5}, Alternate: Signal
+    High-Speed Connector, Output: {High-Speed Connector:3}, Ingredients: {Quickwire:90}{Silica:37.5}{Circuit Board:3}, Alternate: Silicone
+    Supercomputer, Output: {Supercomputer:1.9}, Ingredients: {Computer:3.8}{A.I. Limiter:3.8}{High-Speed Connector:5.6}{Plastic:52.5}
+    Turbo Motor, Output: {Turbo Motor:1.9}, Ingredients: {Heat Sink:7.5}{Radio Control Unit:3.8}{Motor:7.5}{Rubber:45}
+    Turbo Motor, Output: {Turbo Motor:2.8}, Ingredients: {Motor:6.6}{Radio Control Unit:4.7}{A.I. Limiter:8.4}{Stator:6.6}, Alternate: Rigour
+}~
+
+
